@@ -8,8 +8,9 @@ from pathlib import Path
 
 from .quantumarticle import parse as quantumarticle_parse
 from .revtex import parse as revtex_parse
+from .aastex63 import parse as aastex63_parse
 
-_PARSERS = [quantumarticle_parse, revtex_parse]
+_PARSERS = [quantumarticle_parse, revtex_parse, aastex63_parse]
 
 _comment_regex = re.compile("(%.*)")
 
